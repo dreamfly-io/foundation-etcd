@@ -14,4 +14,17 @@
     <name>Parent - Foundation Etcd</name>
     <packaging>pom</packaging>
 
+    <properties>
+        <foundation.grpc.version>0.1.0-SNAPSHOT</foundation.grpc.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.dreamfly.grpc</groupId>
+                <artifactId>foundation-grpc-core</artifactId>
+                <version>${foundation.grpc.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>

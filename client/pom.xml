@@ -9,8 +9,8 @@
         <relativePath>../parent/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
     <artifactId>foundation-etcd-client</artifactId>
+    <name>Client - Foundation Etcd</name>
 
     <dependencies>
         <!-- gRPC dependencies  -->
@@ -26,22 +26,14 @@
             <groupId>io.grpc</groupId>
             <artifactId>grpc-protobuf</artifactId>
         </dependency>
-
         <dependency>
             <groupId>io.grpc</groupId>
             <artifactId>grpc-stub</artifactId>
         </dependency>
 
-        <!-- Explicitly declare and unity netty version to avoid conflicts -->
         <dependency>
-            <groupId>io.netty</groupId>
-            <artifactId>netty-codec-http2</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-        <dependency>
-            <groupId>io.netty</groupId>
-            <artifactId>netty-handler-proxy</artifactId>
-            <scope>runtime</scope>
+            <groupId>io.dreamfly.grpc</groupId>
+            <artifactId>foundation-grpc-core</artifactId>
         </dependency>
     </dependencies>
 
